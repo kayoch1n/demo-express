@@ -1,6 +1,8 @@
 function goodbye(params) {
+  let msg = `Goodbye`;
   const { interface } = params;
-  return `Goodbye, ${interface}!`;
+  msg = `${msg}, ${interface};`
+  return msg;
 }
 
 exports.goodbye = goodbye;
